@@ -28,7 +28,7 @@ sprites.onOverlap(SpriteKind.niga_star, SpriteKind.Projectile, function (sprite,
         . . . . . . . . . . . . . . . . 
         `, sprite, -50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -48,7 +48,7 @@ sprites.onOverlap(SpriteKind.niga_star, SpriteKind.Projectile, function (sprite,
         . . . . . . . . . . . . . . . . 
         `, sprite, 50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -68,7 +68,7 @@ sprites.onOverlap(SpriteKind.niga_star, SpriteKind.Projectile, function (sprite,
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, -50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -88,7 +88,7 @@ sprites.onOverlap(SpriteKind.niga_star, SpriteKind.Projectile, function (sprite,
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, 50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     music.powerUp.play()
     sprite.destroy(effects.fire, 5000)
     otherSprite.destroy()
@@ -158,7 +158,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, -50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -178,7 +178,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -198,7 +198,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, -50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -218,8 +218,9 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, 50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     music.powerUp.play()
+    sprite.ay = 400
     sprite.destroy(effects.fire, 5000)
     otherSprite.destroy()
 })
@@ -250,7 +251,7 @@ sprites.onOverlap(SpriteKind.nijua, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, -50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -270,7 +271,7 @@ sprites.onOverlap(SpriteKind.nijua, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 50, 0)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -290,7 +291,7 @@ sprites.onOverlap(SpriteKind.nijua, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, -50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -310,7 +311,7 @@ sprites.onOverlap(SpriteKind.nijua, SpriteKind.Projectile, function (sprite, oth
         . . . . . . . . . . . . . . . . 
         `, sprite, 0, 50)
     projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-    projectile2.lifespan = 250
+    projectile2.lifespan = sprites.readDataNumber(otherSprite, "ms")
     music.powerUp.play()
     sprite.destroy(effects.fire, 5000)
     otherSprite.destroy()
@@ -334,6 +335,7 @@ function doSomething () {
         player1.setFlag(SpriteFlag.Invisible, true)
         sprites.setDataBoolean(player1, "catty", true)
         sprites.setDataBoolean(player1, "mowe", false)
+        sprites.setDataBoolean(player1, "portle", false)
     } else if (player1.tileKindAt(TileDirection.Center, myTiles.tile4)) {
         playerslet += 1
         controller.player1.moveSprite(player1, 0, 0)
@@ -341,6 +343,15 @@ function doSomething () {
         player1.setFlag(SpriteFlag.Invisible, true)
         sprites.setDataBoolean(player1, "catty", false)
         sprites.setDataBoolean(player1, "mowe", true)
+        sprites.setDataBoolean(player1, "portle", false)
+    } else if (player1.tileKindAt(TileDirection.Center, myTiles.tile1)) {
+        playerslet += 1
+        controller.player1.moveSprite(player1, 0, 0)
+        player1.setFlag(SpriteFlag.Ghost, true)
+        player1.setFlag(SpriteFlag.Invisible, true)
+        sprites.setDataBoolean(player1, "catty", false)
+        sprites.setDataBoolean(player1, "mowe", false)
+        sprites.setDataBoolean(player1, "portle", true)
     }
 }
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
@@ -417,13 +428,23 @@ function doSomething2 () {
         player2.setFlag(SpriteFlag.Invisible, true)
         sprites.setDataBoolean(player2, "catty", true)
         sprites.setDataBoolean(player2, "mowe", false)
+        sprites.setDataBoolean(player2, "portle", false)
     } else if (player2.tileKindAt(TileDirection.Center, myTiles.tile4)) {
         playerslet += 1
         controller.player2.moveSprite(player2, 0, 0)
         player2.setFlag(SpriteFlag.Ghost, true)
         player2.setFlag(SpriteFlag.Invisible, true)
         sprites.setDataBoolean(player2, "catty", false)
+        sprites.setDataBoolean(player2, "portle", false)
         sprites.setDataBoolean(player2, "mowe", true)
+    } else if (player2.tileKindAt(TileDirection.Center, myTiles.tile1)) {
+        playerslet += 1
+        controller.player2.moveSprite(player2, 0, 0)
+        player2.setFlag(SpriteFlag.Ghost, true)
+        player2.setFlag(SpriteFlag.Invisible, true)
+        sprites.setDataBoolean(player2, "catty", false)
+        sprites.setDataBoolean(player2, "mowe", false)
+        sprites.setDataBoolean(player2, "portle", true)
     }
 }
 controller.player1.onButtonEvent(ControllerButton.B, ControllerButtonEvent.Pressed, function () {
@@ -473,6 +494,9 @@ function start () {
                 `)
             player1.ay = 150
             controller.player1.moveSprite(player1, 100, 0)
+        } else if (sprites.readDataBoolean(player1, "portle")) {
+            player1.setImage(myTiles.tile9)
+            player1.ay = 100
         }
         player1.setFlag(SpriteFlag.Ghost, false)
         player1.setFlag(SpriteFlag.Invisible, false)
@@ -518,6 +542,9 @@ function start () {
                 `)
             player2.ay = 150
             controller.player2.moveSprite(player2, 100, 0)
+        } else if (sprites.readDataBoolean(player2, "portle")) {
+            player2.setImage(myTiles.tile9)
+            player2.ay = 100
         }
         player2.setFlag(SpriteFlag.Ghost, false)
         player2.setFlag(SpriteFlag.Invisible, false)
@@ -554,8 +581,10 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.theplayer1, function (sprite, oth
     }
 })
 let projectile: Sprite = null
-let x_p1 = 0
 let X_P2 = 0
+let soot_p2 = 0
+let x_p1 = 0
+let _3_soot_p1 = 0
 let thenijua: Sprite = null
 let p1_move = false
 let p2_move = false
@@ -686,7 +715,7 @@ scene.setBackgroundImage(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     `)
 game.showLongText("LG games.", DialogLayout.Bottom)
-tiles.setTilemap(tiles.createTilemap(hex`1000100003030303030303030303030303030303030404040404030303030303030303030304010402040303030303030303030303040404040403030303030303030303030404040404030303030303030303030304040404040303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303`, img`
+tiles.setTilemap(tiles.createTilemap(hex`1000100003030303030303030303030303030303030404040404030303030303030303030304010402040303030303030303030303040404040403030303030303030303030404040404030303030303030303030304040404050303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303`, img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -703,7 +732,7 @@ tiles.setTilemap(tiles.createTilemap(hex`100010000303030303030303030303030303030
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    `, [myTiles.transparency16,myTiles.tile3,myTiles.tile4,sprites.dungeon.darkGroundCenter,myTiles.tile8], TileScale.Sixteen))
+    `, [myTiles.transparency16,myTiles.tile3,myTiles.tile4,sprites.dungeon.darkGroundCenter,myTiles.tile8,myTiles.tile1], TileScale.Sixteen))
 player1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -746,44 +775,264 @@ controller.player2.moveSprite(player2)
 player2.say("p2")
 playerslet = 0
 forever(function () {
+    if (controller.B.isPressed()) {
+        if (sprites.readDataBoolean(player1, "catty")) {
+            if (_3_soot_p1 >= 1) {
+                p1_move = true
+                player1.startEffect(effects.halo, 200)
+                if (x_p1 == 1) {
+                    for (let index = 0; index < 3; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player1.x += -1
+                            pause(1)
+                        }
+                    }
+                } else if (x_p1 == 2) {
+                    for (let index = 0; index < 3; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player1.x += 1
+                            pause(1)
+                        }
+                    }
+                } else if (x_p1 == 3) {
+                    for (let index = 0; index < 6; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player1.y += -1
+                            pause(1)
+                        }
+                    }
+                } else if (x_p1 == 4) {
+                    for (let index = 0; index < 6; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player1.y += 1
+                            pause(1)
+                        }
+                    }
+                }
+                p1_move = false
+                _3_soot_p1 += -1
+                pause(200)
+            } else {
+                p1_move = false
+                _3_soot_p1 = 3
+                pause(1000)
+            }
+        } else if (sprites.readDataBoolean(player1, "mowe")) {
+            if (x_p1 == 1) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, -50, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 2) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 50, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 3) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 0, -50)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 4) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . 4 3 3 3 3 3 4 . . . . . 
+                    . . . . . 4 4 4 4 4 . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 0, 50)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            }
+            sprites.changeDataNumberBy(projectile2, "ms", 500)
+            pause(500)
+        } else if (sprites.readDataBoolean(player1, "portle")) {
+            if (x_p1 == 1) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, -100, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 2) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 100, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 3) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 0, -100)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (x_p1 == 4) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player1, 0, 100)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            }
+            sprites.changeDataNumberBy(projectile2, "ms", 0)
+            pause(200)
+        }
+    }
+})
+forever(function () {
     if (controller.player2.isPressed(ControllerButton.B)) {
-        p2_move = true
         if (sprites.readDataBoolean(player2, "catty")) {
-            player2.startEffect(effects.halo, 500)
-            if (X_P2 == 1) {
-                for (let index = 0; index < 3; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player2.x += -1
-                        pause(1)
+            if (soot_p2 >= 1) {
+                player2.startEffect(effects.halo, 500)
+                p2_move = true
+                if (X_P2 == 1) {
+                    for (let index = 0; index < 3; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player2.x += -1
+                            pause(1)
+                        }
+                    }
+                    p2_move = false
+                } else if (X_P2 == 2) {
+                    for (let index = 0; index < 3; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player2.x += 1
+                            pause(1)
+                        }
+                    }
+                    p2_move = false
+                } else if (X_P2 == 3) {
+                    for (let index = 0; index < 6; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player2.y += -1
+                            pause(1)
+                        }
+                    }
+                    p2_move = false
+                } else if (X_P2 == 4) {
+                    for (let index = 0; index < 6; index++) {
+                        for (let index = 0; index < 16; index++) {
+                            player2.y += 1
+                            pause(1)
+                        }
                     }
                 }
                 p2_move = false
+                soot_p2 += -1
+                pause(200)
+            } else {
+                p2_move = false
+                soot_p2 = 3
                 pause(1000)
-            } else if (X_P2 == 2) {
-                for (let index = 0; index < 3; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player2.x += 1
-                        pause(1)
-                    }
-                }
-                p2_move = false
-                pause(1000)
-            } else if (X_P2 == 3) {
-                for (let index = 0; index < 6; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player2.y += -1
-                        pause(1)
-                    }
-                }
-                p2_move = false
-                pause(50)
-            } else if (X_P2 == 4) {
-                for (let index = 0; index < 6; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player2.y += 1
-                        pause(1)
-                    }
-                }
             }
         } else if (sprites.readDataBoolean(player2, "mowe")) {
             if (X_P2 == 1) {
@@ -867,7 +1116,92 @@ forever(function () {
                     `, player2, 0, 50)
                 projectile2.setFlag(SpriteFlag.AutoDestroy, false)
             }
+            sprites.changeDataNumberBy(projectile2, "ms", 500)
             pause(500)
+        } else if (sprites.readDataBoolean(player2, "portle")) {
+            if (X_P2 == 1) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player2, -100, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (X_P2 == 2) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player2, 100, 0)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (X_P2 == 3) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player2, 0, -100)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            } else if (X_P2 == 4) {
+                projectile2 = sprites.createProjectileFromSprite(img`
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . c f f f f f c . . . . . 
+                    . . . . . c c c c c . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    . . . . . . . . . . . . . . . . 
+                    `, player2, 0, 100)
+                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
+            }
+            sprites.changeDataNumberBy(projectile2, "ms", 0)
+            pause(200)
         }
     }
 })
@@ -1040,132 +1374,8 @@ forever(function () {
         info.player1.setLife(3)
         player2.say("p2", 1)
         player1.say("p2", 1)
-    }
-})
-forever(function () {
-    if (controller.B.isPressed()) {
-        p1_move = true
-        if (sprites.readDataBoolean(player1, "catty")) {
-            player1.startEffect(effects.halo, 500)
-            if (x_p1 == 1) {
-                for (let index = 0; index < 3; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player1.x += -1
-                        pause(1)
-                    }
-                }
-                p1_move = false
-                pause(1000)
-            } else if (x_p1 == 2) {
-                for (let index = 0; index < 3; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player1.x += 1
-                        pause(1)
-                    }
-                }
-                p1_move = false
-                pause(1000)
-            } else if (x_p1 == 3) {
-                for (let index = 0; index < 6; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player1.y += -1
-                        pause(1)
-                    }
-                }
-                p1_move = false
-                pause(50)
-            } else if (x_p1 == 4) {
-                for (let index = 0; index < 6; index++) {
-                    for (let index = 0; index < 16; index++) {
-                        player1.y += 1
-                        pause(1)
-                    }
-                }
-            }
-        } else if (sprites.readDataBoolean(player1, "mowe")) {
-            if (x_p1 == 1) {
-                projectile2 = sprites.createProjectileFromSprite(img`
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    `, player1, -50, 0)
-                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-            } else if (x_p1 == 2) {
-                projectile2 = sprites.createProjectileFromSprite(img`
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    `, player1, 50, 0)
-                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-            } else if (x_p1 == 3) {
-                projectile2 = sprites.createProjectileFromSprite(img`
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    `, player1, 0, -50)
-                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-            } else if (x_p1 == 4) {
-                projectile2 = sprites.createProjectileFromSprite(img`
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . 4 3 3 3 3 3 4 . . . . . 
-                    . . . . . 4 4 4 4 4 . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    . . . . . . . . . . . . . . . . 
-                    `, player1, 0, 50)
-                projectile2.setFlag(SpriteFlag.AutoDestroy, false)
-            }
-            pause(500)
-        }
+        _3_soot_p1 = 3
+        soot_p2 = 3
     }
 })
 forever(function () {
@@ -1273,6 +1483,72 @@ forever(function () {
                 value.y += -1
                 pause(1)
             }
+        }
+    }
+})
+forever(function () {
+    if (sprites.readDataBoolean(player1, "portle")) {
+        if (controller.left.isPressed()) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player1.x += -1
+                }
+            }
+            pause(200)
+        } else if (controller.right.isPressed()) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player1.x += 1
+                }
+            }
+            pause(200)
+        } else if (controller.down.isPressed()) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player1.y += 1
+                }
+            }
+            pause(200)
+        } else if (controller.up.isPressed()) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player1.y += -1
+                }
+            }
+            pause(200)
+        }
+    }
+})
+forever(function () {
+    if (sprites.readDataBoolean(player2, "portle")) {
+        if (controller.player2.isPressed(ControllerButton.Left)) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player2.x += -1
+                }
+            }
+            pause(200)
+        } else if (controller.player2.isPressed(ControllerButton.Right)) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player2.x += 1
+                }
+            }
+            pause(200)
+        } else if (controller.player2.isPressed(ControllerButton.Down)) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player2.y += 1
+                }
+            }
+            pause(200)
+        } else if (controller.player2.isPressed(ControllerButton.Up)) {
+            for (let index = 0; index < 3; index++) {
+                for (let index = 0; index < 16; index++) {
+                    player2.y += -1
+                }
+            }
+            pause(200)
         }
     }
 })
